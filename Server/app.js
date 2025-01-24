@@ -19,6 +19,9 @@ app.use(cors({
             credentials : true
 }))
 
+app.all('*', (req, res) => {
+    res.status(404).send('OOPS! 404 Page not found')
+})
 
 // routes
 import userRouter from './routes/user.routes.js'
