@@ -15,7 +15,8 @@ app.use(cookieParser());
 
 // cors = > cors origin resouseces sgaring  htere be put that if the requise form perticural url then response   To allow your frontend to access the backend, you need to enable CORS on the backend. allow to share the resocess or cummunicate froontend to the backen d
 app.use(cors({
-    origin: ["https://task-tracker-frontend-mauve.vercel.app", "http://localhost:5173"],
+    origin: ["https://task-tracker-frontend-mauve.vercel.app/", "http://localhost:5173"],
+    methods: ['GET', 'POST'],
     credentials: true,
 }));
 
