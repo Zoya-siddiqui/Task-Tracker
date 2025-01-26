@@ -6,7 +6,7 @@ import Register from './Pages/Register'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Login from './Pages/Login'
 import UserDashboard from './Pages/Dashboard/UserDashboard'
-import ShrinkNav from './Components/Animatedpages/shrinknav'
+import ShrinkNav from './Components/Animatedpages/ShrinkNav'
 import HomeZoominimage from './Components/Animatedpages/HomeZoominimage'
 import AnimationZoomScroll from './Components/Animatedpages/AnimationZoomScroll'
 
