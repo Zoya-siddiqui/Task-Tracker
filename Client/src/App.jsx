@@ -6,6 +6,9 @@ import Register from './Pages/Register'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Login from './Pages/Login'
 import UserDashboard from './Pages/Dashboard/UserDashboard'
+import ShrinkNav from './Components/Animatedpages/shrinknav'
+import HomeZoominimage from './Components/Animatedpages/HomeZoominimage'
+import AnimationZoomScroll from './Components/Animatedpages/AnimationZoomScroll'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,6 +20,9 @@ function App() {
       <Route path='/' element={<Login/>}/>
       <Route path='/register' element={<Register/>}/>
       <Route path='/dashboard' element={<UserDashboard/>}/>
+      <Route path="/shrink-nav" element={<ShrinkNav/>}/>
+      <Route path="/zoom-animation" element={<HomeZoominimage/>}/>
+      <Route path='/zoom-hero-animation' element={<AnimationZoomScroll/>}/>
     </Routes>
     </BrowserRouter>
    
