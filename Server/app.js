@@ -14,11 +14,15 @@ app.use(express.json())
 app.use(cookieParser());
 
 // cors = > cors origin resouseces sgaring  htere be put that if the requise form perticural url then response   To allow your frontend to access the backend, you need to enable CORS on the backend. allow to share the resocess or cummunicate froontend to the backen d
-app.use(cors({
-    origin: '*', 
-    methods: ['GET', 'POST'],
-    credentials: true,
-}));
+const allowedOrigins = ['https://task-tracker-mygb.onrender.com']; // Add your frontend's URL here
+
+app.use(
+  cors({
+    origin: allowedOrigins, // Allow requests only from the specific origin
+    methods: ['GET', 'POST'], // Specify allowed HTTP methods
+    credentials: true, // Enable cookies and credentials
+  })
+);
 
 
 app.get('/', (req, res) => {
